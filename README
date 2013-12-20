@@ -1,0 +1,12 @@
+This is a Ruby wrapper for Sunlight Foundation's Party Time API. It is a work in progress and not all API methods are accessible.
+
+To install:
+gem install sunlightpartytime
+
+To use:
+s = SunlightPartyTime.new("apikey")
+
+Methods-
+crp_id("name of legislator"): Get id # for legislator
+parties(crp_id): Get all parties legislator is a benificiary of
+parties_clean(crp_id): Get a cleaner format of party info for visualization
