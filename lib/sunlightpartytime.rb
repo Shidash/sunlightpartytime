@@ -22,14 +22,16 @@ class SunlightPartyTime
   end
 
   # Get all events a legislator is a beneficiary of
-  def parties(cid)
+  def parties(name)
+    cid = crp_id(name)
     options = {:query => {:apikey => @apikey} }
     data = HTTParty.get("http://politicalpartytime.org/api/v1/event/?beneficiaries__crp_id=" + cid.to_s + "&format=json", options)["objects"]
     return data.to_json
   end
 
   # Get a cleaner JSON of party events
-  def parties_clean(cid)
+  def parties_clean(name)
+    cid = crp_id(name)
     parties = JSON.parse(parties(cid))
     partyarray = Array.new
 
