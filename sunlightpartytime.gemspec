@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sunlightpartytime'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2013-12-28'
   s.summary     = "Wrapper for Sunlight Foundation's Party Time API"
   s.description = "Access to Sunlight Foundation's Party Time data."

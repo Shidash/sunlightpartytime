@@ -31,8 +31,7 @@ class SunlightPartyTime
 
   # Get a cleaner JSON of party events
   def parties_clean(name)
-    cid = crp_id(name)
-    parties = JSON.parse(parties(cid))
+    parties = JSON.parse(parties(name))
     partyarray = Array.new
 
     parties.each do |p|

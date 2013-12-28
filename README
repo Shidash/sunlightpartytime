@@ -8,5 +8,5 @@ s = SunlightPartyTime.new("apikey")
 
 Methods-
 crp_id("name of legislator"): Get id # for legislator
-parties(crp_id): Get all parties legislator is a benificiary of
-parties_clean(crp_id): Get a cleaner format of party info for visualization
+parties("name of legislator"): Get all parties legislator is a benificiary of
+parties_clean("name of legislator"): Get a cleaner format of party info for visualization
